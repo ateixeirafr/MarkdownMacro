@@ -231,7 +231,7 @@ graph TB
     classDef green fill:#16b522,stroke:#000,stroke-width:2px,color:#fff
 
     u(user):::blue -- "request" --> fw[/firewall/]:::red
-    fw == "loadbalance" ==> ch>cache]:::orange
+    fw == "loadbalance" ==> ch{{cache}}:::orange
     ch == "loadbalance" ==> ws1[[webservice]]:::blue
     ch == "loadbalance" ==> ws2[[webservice]]:::blue
     fw -. "is AT valid ?" .-> idp{"idp"}:::pink
